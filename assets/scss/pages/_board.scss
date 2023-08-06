@@ -1,0 +1,21 @@
+.board {
+  max-width: 296px;
+}
+
+.menu-item {
+  cursor: pointer;
+}
+.menu-item.active,
+.menu-item:hover {
+  color: $success;
+  border-left: 4px solid $success;
+}
+
+.admin-img {
+  width: 40px;
+  height: 40px;
+}
+
+.hover-member-mail:hover {
+  color: $danger !important;
+}

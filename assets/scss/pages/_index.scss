@@ -1,0 +1,39 @@
+.page-link:hover {
+  color: $white !important;
+  background-color: $success;
+}
+.page-link.active, .active > .page-link {
+  color: $white !important;
+  background-color: $success;
+}
+
+.add-admin-btn:hover {
+  color: $danger !important;
+  span.material-icons {
+    color: $danger !important;
+  }
+}
+
+.icon-menu li a {
+  color: $dark;
+  &:hover {
+    color: $danger;
+  }
+}
+
+.table-title-item {
+  cursor: pointer;
+}
+.table-title-item:hover {
+  color: $danger;
+  & > span.material-icons {
+    color: $danger !important;
+  }
+}
+
+.hover-icon {
+  cursor: pointer;
+  &:hover {
+    color: $danger;
+  }
+}
