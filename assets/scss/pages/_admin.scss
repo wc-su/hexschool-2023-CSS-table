@@ -1,8 +1,6 @@
-.page-link:hover {
-  color: $white !important;
-  background-color: $success;
-}
-.page-link.active, .active > .page-link {
+.page-link:hover,
+.page-link.active,
+.active > .page-link {
   color: $white !important;
   background-color: $success;
 }
@@ -32,6 +30,19 @@
 }
 
 .hover-icon {
+  cursor: pointer;
+  &:hover {
+    color: $danger;
+  }
+}
+
+
+
+.admin-modal-img {
+  max-width: 141px;
+  height: 141px;
+}
+.admin-modal-btn {
   cursor: pointer;
   &:hover {
     color: $danger;
