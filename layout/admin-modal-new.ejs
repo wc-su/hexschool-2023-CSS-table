@@ -1,0 +1,46 @@
+<div class="modal fade" id="modalNew" tabindex="-1" aria-labelledby="newModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content border-radius-2">
+      <div class="modal-header p-6 border-0">
+        <h4 class="modal-title fw-bold" id="newModalLabel">Edit Admin</h4>
+        <span class="admin-modal-btn material-icons" data-bs-dismiss="modal" aria-label="Close">close</span>
+      </div>
+      <div class="modal-body p-0 px-6">
+        <div class="pb-4 border-bottom border-gray-400">
+          <h5 class="fs-8 fw-bold mb-3">Account</h5>
+          <div class="mb-3">
+            <label for="accountName" class="form-label fs-7 mb-1">Name</label>
+            <input type="text" class="form-control border-dark rounded-0 p-3" id="newAccountName" placeholder=""/>
+          </div>
+          <div>
+            <label for="accountMail" class="form-label fs-7 mb-1">Email</label>
+            <input type="mail" class="form-control border-dark rounded-0 p-3" id="newAccountMail" placeholder=""/>
+          </div>
+        </div>
+        <div class="py-4 border-bottom border-gray-400">
+          <h5 class="fs-8 fw-bold mb-7">Verification</h5>
+          <div class="d-flex align-items-center mb-7">
+            <span class="material-icons fs-8 me-7 text-danger">warning</span>
+            <p class="fw-bold m-0">Unverified</p>
+          </div>
+          <button type="button" class="fw-bold btn btn-outline-success border-gray-400 border-radius-2 w-100 py-3">Send Verification Mail</button>
+        </div>
+        <div class="py-4 border-bottom border-gray-400">
+          <h5 class="fs-8 fw-bold mb-3">Access Level</h5>
+          <select class="form-select w-100 border-radius-2 p-3 text-secondary" aria-label="Default select example">
+            <option selected disabled>-Choose access level-</option>
+            <option value="Adam">Adam</option>
+            <option value="Mmeber">Mmeber</option>
+          </select>
+        </div>
+        <div class="pt-4">
+          <h5 class="fs-8 fw-bold mb-3">Custom Access</h5>
+        </div>
+      </div>
+      <div class="modal-footer border-gray-400 py-3 px-6">
+        <button type="button" class="btn btn-outline-success border-gray-400 border-radius-2 fw-bold px-6 py-8 me-3" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success border-radius-2 fw-bold px-6 py-8">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

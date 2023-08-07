@@ -2,14 +2,12 @@
   max-width: 296px;
 }
 
-.menu-item {
-  cursor: pointer;
+.menu-link.active,
+.menu-link:hover {
+  color: $success !important;
+  border-color: $success !important;
 }
-.menu-item.active,
-.menu-item:hover {
-  color: $success;
-  border-left: 4px solid $success;
-}
+
 
 .admin-img {
   width: 40px;

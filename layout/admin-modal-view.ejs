@@ -1,22 +1,28 @@
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalView" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content rounded-0">
-      <div class="modal-body p-5">
-        <div class="d-flex flex-row">
-            <img src="../assets/images/emir.jpeg" class="admin-modal-img me-4" alt="emir">
-            <div class="flex-fill position-relative">
-                <p class="mb-2">#1</p>
-                <p class="m-0">Admin</p>
-                <p class="fs-4 fw-bold mb-2">Emir Wicks</p>
-                <p class="fs-6 text-secondary mb-3">emir.wicks@mail.com</p>
-                <span class="fs-6 bg-light px-2 py-1" disabled>Verified</span>
-                <span class="admin-modal-btn material-icons position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close">close</span>
-                <span class="admin-modal-btn material-icons position-absolute bottom-0 end-0">expand_more</span>
-            </div>
+      <div class="modal-body p-6">
+        <div class="d-flex">
+          <img src="../assets/images/emir.jpeg" class="admin-modal-img border-radius-2 me-4" alt="emir">
+          <div class="flex-fill position-relative">
+            <p class="mb-1">#1</p>
+            <p class="m-0">Admin</p>
+            <p class="fs-4 fw-bold mb-1">Emir Wicks</p>
+            <p class="fs-7 text-secondary mb-3">emir.wicks@mail.com</p>
+            <span class="fs-7 bg-light px-2 py-1">Verified</span>
+            <span class="admin-modal-btn material-icons position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close">close</span>
+            <span
+              class="admin-modal-btn admin-modal-btn-expand material-icons position-absolute bottom-0 end-0 collapsed"
+              data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              expand_more
+            </span>
+          </div>
         </div>
-        <div class="d-flex justify-content-end mt-4 d-none">
-            <button type="button" class="btn btn-outline-danger rounded-1 fw-bold px-4 py-2 me-3">Deactivate</button>
-            <buttontype="button" class="btn btn-success rounded-1 fw-bold px-4 py-2">Edit</button>
+        <div class="collapse" id="collapseExample">
+          <div class="d-flex justify-content-end mt-6">
+            <button type="button" class="btn btn-outline-danger border-radius-2 fw-bold px-6 py-8 me-3">Deactivate</button>
+            <button type="button" class="btn btn-success border-radius-2 fw-bold px-6 py-8" data-bs-toggle="modal" data-bs-target="#modalEdit">Edit</button>
+          </div>
         </div>
       </div>
     </div>
